@@ -1,0 +1,9 @@
+stack1 @ dev1 --> 192.168.122.65 --> forwarder
+stack2 @ dev2 --> 192.168.122.129 --> origin
+
+# docker rm -f nginx-cache
+docker build -t sd/nginx-cache .
+docker run --name nginx-cache \
+           -p 8080:80 \
+           -d sd/nginx-cache
+
