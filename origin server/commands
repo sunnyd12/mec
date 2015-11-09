@@ -1,0 +1,6 @@
+wget http://download.blender.org/peach/bigbuckbunny_movies/BigBuckBunny_320x180.mp4
+wget https://bennugd-vlc.googlecode.com/files/big_buck_bunny_480p.ogv
+
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+sudo apt-get install nginx
+tail -f /var/log/nginx/access.log 

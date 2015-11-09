@@ -1,0 +1,22 @@
+sudo nano nginx.conf
+sudo chmod +x nginx.conf
+sudo service nginx restart
+
+##########error check############
+
+
+nginx -c /etc/nginx/nginx.conf -t
+cd /tmp
+sudo mkdir nginx
+cd /nginx
+sudo mkdir cache
+
+
+cd /tmp/nginx/cache/
+cd /var/log/nginx/
+
+cd /etc/nginx
+sites-enabled  sites-available  nginx.conf
+
+cd /usr/share/ninx/html
+index.html
